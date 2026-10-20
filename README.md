@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+# rahim<span style="color:#a3e635">.</span>
 
-First, run the development server:
+**Full Stack Web Developer — Portfolio Website**
+
+A modern, neon-themed portfolio built with Next.js 16, React 19 and Tailwind CSS v4.
+Dark glassmorphism, animated reveals, and a custom gradient monogram — fully static, fast, and accessible.
+
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/license-MIT-green)](#license)
+
+</div>
+
+---
+
+## ✨ Features
+
+- **Modern neon design** — dark glassmorphism, gradient accents and soft glows
+- **Custom logo & favicon** — gradient "R" monogram, SVG favicon scales to any size
+- **Resume page** — print-friendly, built from centralized site data
+- **Project showcase** — cards with screenshots, hover zoom and stack badges
+- **Animated UI** — scroll reveals, floating avatar, skill marquee, pulse glows
+- **Responsive** — mobile sheet menu, fluid grids, optimized images
+- **Accessible** — semantic markup, focus rings, `prefers-reduced-motion` support
+- **Static & fast** — every route prerendered at build time
+
+## 📄 Pages
+
+| Route | Description |
+|---|---|
+| `/` | Hero, stats, featured projects, skill marquee |
+| `/projects` | Full project grid with images and links |
+| `/experience` | Career timeline with current-role highlight |
+| `/resume` | Printable resume — skills, experience, projects |
+| `/about` | Bio, photo, quick facts and tech stack tabs |
+| `/contact` | Contact form and links |
+
+## 🛠 Tech Stack
+
+| Layer | Tools |
+|---|---|
+| Framework | Next.js 16 (App Router, Turbopack, Cache Components) |
+| UI | React 19, shadcn/ui (Base UI), lucide-react |
+| Styling | Tailwind CSS v4, CSS-first theme tokens |
+| Extras | React Compiler, Geist fonts |
+
+## 🚀 Getting Started
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/rahim-codes/portfolio-website.git
+cd portfolio-website
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Action |
+|---|---|
+| `npm run dev` | Start development server |
+| `npm run build` | Production build |
+| `npm run start` | Serve the production build |
+| `npm run lint` | Run ESLint |
 
-## Learn More
+## 🗂 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+portfolio-website/
+├── public/
+│   ├── photo.jpg              # Profile photo
+│   ├── projects/              # Project screenshots & covers
+│   └── ...
+└── src/
+    ├── app/                   # App Router pages (routes)
+    │   ├── icon.svg           # Logo favicon
+    │   ├── globals.css        # Theme tokens & custom utilities
+    │   └── ...
+    ├── components/
+    │   ├── layout/            # Navbar, footer
+    │   ├── sections/          # Hero, etc.
+    │   ├── ui/                # shadcn/ui primitives
+    │   ├── logo.js            # Gradient monogram logo
+    │   ├── project-card.js    # Project card with image
+    │   └── ...
+    └── lib/
+        ├── data/site.js       # ⭐ All site content — edit me
+        └── utils.js
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✏️ Customize
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All content lives in **`src/lib/data/site.js`** — update:
 
-## Deploy on Vercel
+- `site` — name, role, bio, email, social links, photo
+- `projects` — title, description, stack, `image` path, links
+- `experience` — roles, periods, summaries
+- `skillGroups` / `marqueeSkills` — tech skills
+- `navLinks` / `stats` / `quickFacts` — navigation & misc
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Add project images to `public/projects/` and reference them via the `image` field.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📸 Screenshots
+
+Drop your screenshots into `public/projects/` (Len Den Tracker and Vault Manager are already wired up; the rest use themed SVG covers).
+
+## 📄 License
+
+MIT — feel free to use this as a starting point for your own portfolio.
+
+---
+
+<div align="center">
+  Built with <a href="https://nextjs.org">Next.js</a> · Designed & developed by <b>Abdur Rahim</b>
+</div>
