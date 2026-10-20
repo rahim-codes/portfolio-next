@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#ffffff" stroke-opacity="0.05" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <rect width="1280" height="800" fill="url(#grid)"/>
+  <circle cx="160" cy="640" r="240" fill="url(#accent)" opacity="0.08"/>
+  <g transform="translate(490 290)">
+    <rect width="300" height="210" rx="28" fill="#0f172a" stroke="url(#accent)" stroke-width="3"/>
+    <rect x="110" y="18" width="80" height="10" rx="5" fill="#334155"/>
+    <path d="M80 120 L150 70 L220 120" stroke="url(#accent)" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M220 120 L150 170 L80 120" stroke="url(#accent)" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+    <circle cx="150" cy="120" r="14" fill="url(#accent)"/>
+  </g>
+  <text x="640" y="570" text-anchor="middle" font-family="system-ui, sans-serif" font-size="42" font-weight="700" fill="#e2e8f0">Zap Shift Client</text>
+  <text x="640" y="616" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8">Parcel booking &amp; tracking</text>
+</svg>

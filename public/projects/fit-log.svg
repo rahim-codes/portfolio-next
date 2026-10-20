@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#a3e635"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#ffffff" stroke-opacity="0.05" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <rect width="1280" height="800" fill="url(#grid)"/>
+  <circle cx="200" cy="160" r="220" fill="url(#accent)" opacity="0.08"/>
+  <g transform="translate(500 280)">
+    <rect width="280" height="220" rx="16" fill="#0f172a" stroke="url(#accent)" stroke-width="3"/>
+    <polyline points="40,160 100,110 150,140 240,60" stroke="url(#accent)" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="100" cy="110" r="7" fill="#a3e635"/>
+    <circle cx="150" cy="140" r="7" fill="#a3e635"/>
+    <circle cx="240" cy="60" r="7" fill="#a3e635"/>
+    <rect x="40" y="180" width="200" height="10" rx="5" fill="#94a3b8" opacity="0.35"/>
+  </g>
+  <text x="640" y="570" text-anchor="middle" font-family="system-ui, sans-serif" font-size="42" font-weight="700" fill="#e2e8f0">Fit Log</text>
+  <text x="640" y="616" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8">Workout tracker</text>
+</svg>
